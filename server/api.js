@@ -1,6 +1,10 @@
+import "dotenv"
 import { GraphQLHTTP } from "gql";
 import { makeExecutableSchema } from "graphql_tools";
 import { gql } from "graphql_tag";
+import { connect } from "hyper-connect";
+
+const hyper = connect(Deno.env.get('HYPER'))
 
 const typeDefs = gql`
 

@@ -1,2 +1,2 @@
 dev:
-	@deno run --allow-net --import-map import_map.json --watch server/mod.js
+	@deno run --allow-net --allow-read --allow-env --import-map import_map.json --watch server/mod.js
